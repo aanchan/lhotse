@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 def default_tools_cachedir() -> Path:
-    d = Path.home() / ".lhotse/tools"
+    d = Path.cwd() / ".lhotse/tools"
     d.mkdir(exist_ok=True, parents=True)
     return d
 
